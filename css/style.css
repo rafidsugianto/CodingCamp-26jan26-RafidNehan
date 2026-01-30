@@ -1,0 +1,15 @@
+
+.logo {
+    height: 60px;
+    width: 60px;
+    background-color: darkgrey;
+    border-radius: 50px;
+    background-image: url(https://wallpapercave.com/wp/wp11987468.jpg);
+    background-size: contain;
+}
+
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

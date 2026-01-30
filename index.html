@@ -4,18 +4,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Web Page</title>
+    <title>Portofolio Rafid</title>
 
     <!-- css external-->
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css\style.css">
+
+    <!-- tailwindcss CDN-->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 
 <body>  
-    <header></header>
+    <header class="main-header p-2">
+        <!--logo-->
+        <div class="logo"></div>
 
-    <main></main>
+        <!--navigation menu-->
+        <nav class="flex">
+            <a class="border rounded p-2" href="#home">Home</a>
+            <a class="border rounded p-2" href="#our-profile-page">Our Profile</a>
+            <a class="border rounded p-2" href="#portfolio-page">Portofolio</a>
+            <a class="border rounded p-2" href="#message-us-page">Message Us</a>
+        </nav>
+    </header>
 
-    <footer></footer>
+    <hr>
+
+    <main>
+        <!--Home page-->
+        <section id="home-page" class="min-h-[500px] text-center content-center">
+            <h2 class="text-xl font-bold" id="welcome-speech">Welcome to My Web Page</h2>
+            <p class="mt-2">we are a team of passionate developers creating amazing web experiences.</p>
+        </section>
+
+        <hr/>
+
+        <!--our profile-->
+        <section id="our" class="min-h-[500px] text-center content-center">
+            <h2 class="text-xl font-bold">about Rafid</h2>
+            <p class="mt-2">we are a team of passionate developers creating amazing web experiences.</p>
+        </section>
+
+        <hr/>
+
+        <!--portfolio-->
+        <section id="portfolio-page" class="min-h-[500px] text-center content-center">
+            <h2 class="text-xl font-bold" id="portfolio-speech">Our Portfolio</h2>
+            <p class="mt-2">we are a team of passionate developers creating amazing web experiences.</p>
+        </section>
+
+        <hr/>
+
+        <!--message us-->
+    <section id="message-us-page" class="min-h-[500px] mx-8">
+        <header>
+            <h2 class="text-xl font-bold">Message Us</h2>
+            <p class="mt-2">we are a team of passionate developers
+        </header>
+
+        <form>
+            <div class="mb-4">
+                <label class="block mb-2" for="name">Name:</label>
+                <input class="w-full p-2 border rounded" type="text" id="name" name="name">
+            </div>
+            <div class="mb-4">
+                <label class="block mb-2" for="email">Email:</label>
+                <input class="w-full p-2 border rounded" type="email" id="email" name="email">
+            </div>
+            <div class="mb-4">
+                <label class="block mb-2" for="message">Message:</label>
+                <textarea class="w-full p-2 border rounded" id="message" name="message" rows="4"></textarea>
+            </div>
+            <input class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 cursor-pointer" type="submit" value="Submit">
+        </form>      
+    </section>
+</main>
+
+    <footer>
+        <div class="text-center p-4 bg-gray-200">
+            &copy; 2026 Rafid. All rights reserved.
+        </div>
+    </footer>
 
     <!-- Javascript External-->
     <script src="js/script.js"></script>
