@@ -1,92 +1,131 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="id">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portofolio Rafid</title>
-
-    <!-- css external-->
-    <link rel="stylesheet" href="css\style.css">
-
-    <!-- tailwindcss CDN-->
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>My Website</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
+<body>
 
-<body>  
-    <header class="main-header p-2">
-        <!--logo-->
-        <div class="logo"></div>
+<!-- HEADER -->
+<header class="header">
+    <div class="logo">🙂</div>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#profile">Profile</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#message">Message Us</a>
+    </nav>
+</header>
 
-        <!--navigation menu-->
-        <nav class="flex">
-            <a class="border rounded p-2" href="#home">Home</a>
-            <a class="border rounded p-2" href="#our-profile-page">Our Profile</a>
-            <a class="border rounded p-2" href="#portfolio-page">Portofolio</a>
-            <a class="border rounded p-2" href="#message-us-page">Message Us</a>
-        </nav>
-    </header>
+<hr>
 
-    <hr>
+<!-- HOME -->
+<section id="home" class="home">
+    <h2>Hi Rafid, Welcome To Website</h2>
+    <p>
+        Ini adalah website portfolio sederhana yang dibuat sebagai media
+        untuk menampilkan informasi profil, portofolio, dan komunikasi.
+    </p>
+</section>
 
-    <main>
-        <!--Home page-->
-        <section id="home-page" class="min-h-[500px] text-center content-center">
-            <h2 class="text-xl font-bold" id="welcome-speech">Welcome to My Web Page</h2>
-            <p class="mt-2">we are a team of passionate developers creating amazing web experiences.</p>
-        </section>
+<hr>
 
-        <hr/>
-
-        <!--our profile-->
-        <section id="our" class="min-h-[500px] text-center content-center">
-            <h2 class="text-xl font-bold">about Rafid</h2>
-            <p class="mt-2">we are a team of passionate developers creating amazing web experiences.</p>
-        </section>
-
-        <hr/>
-
-        <!--portfolio-->
-        <section id="portfolio-page" class="min-h-[500px] text-center content-center">
-            <h2 class="text-xl font-bold" id="portfolio-speech">Our Portfolio</h2>
-            <p class="mt-2">we are a team of passionate developers creating amazing web experiences.</p>
-        </section>
-
-        <hr/>
-
-        <!--message us-->
-    <section id="message-us-page" class="min-h-[500px] mx-8">
-        <header>
-            <h2 class="text-xl font-bold">Message Us</h2>
-            <p class="mt-2">we are a team of passionate developers
-        </header>
-
-        <form>
-            <div class="mb-4">
-                <label class="block mb-2" for="name">Name:</label>
-                <input class="w-full p-2 border rounded" type="text" id="name" name="name">
-            </div>
-            <div class="mb-4">
-                <label class="block mb-2" for="email">Email:</label>
-                <input class="w-full p-2 border rounded" type="email" id="email" name="email">
-            </div>
-            <div class="mb-4">
-                <label class="block mb-2" for="message">Message:</label>
-                <textarea class="w-full p-2 border rounded" id="message" name="message" rows="4"></textarea>
-            </div>
-            <input class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 cursor-pointer" type="submit" value="Submit">
-        </form>      
-    </section>
-</main>
-
-    <footer>
-        <div class="text-center p-4 bg-gray-200">
-            &copy; 2026 Rafid. All rights reserved.
+<!-- OUR HEADQUARTER -->
+<section id="PROFILE" class="headquarter">
+    <h3>PROFILE</h3>
+    <div class="hq-list">
+        <div class="hq-desc">
+            <p>
+                Saya berasal dari Batam umur saya 19 tahun, saya ingin bercita cita sebagai 
+                seorang yang ahli dalam dunia IT paling tepatnya di bidang Jaringan dan keamanan siber.
+                saya memiiliki hobi bermain game dan terkdanag suka mengerjakan coding. 
+                lalu saya juga baca buku mengenai dunia IT. karena menurut saya dunia IT itu sangat menarik.
+            </p>
         </div>
-    </footer>
+    </div>
+</section>
 
-    <!-- Javascript External-->
-    <script src="js/script.js"></script>
+<hr>
+
+<!-- PORTFOLIO -->
+<section id="portfolio" class="portfolio">
+    <h3>Our Portfolio</h3>
+    <p class="portfolio-desc">
+        Portofolio ini berisi beberapa pencapaian atau penghargaan yang telah
+        saya raih selama mengikuti berbagai kegiatan di sekolah dan di kuliah
+    </p>
+
+    <div class="portfolio-list">
+        <div class="portfolio-card">
+            <h4>Juara 2 Lomba Sains nasional Informatika</h4>
+            <p>
+                saya telah menjuarai lomba sains nasional ketika saya duduk di bangku
+                sma kelas 12 pada tahun 2024 lalu.
+            </p>
+        </div>
+
+        <div class="portfolio-card">
+            <h4>Membuat aplikasi berbasis Python</h4>
+            <p>
+                di kuliah saya telah membuat projek yaitu membuat aplikasi untuk
+                membuat data barang barang makanan yang masuk di minimarket dan pengeluaran
+                barang yang ada di minimarket agar mempermudah admin dalam mengetahui
+                jumlah barang kulaannya  .
+            </p>
+        </div>
+
+        <div class="portfolio-card">
+            <h4>pengalaman dalam organisasi</h4>
+            <p>
+                saya telah mengikuti organisasi di sekolah yaitu pramuka, di pramuka Saya
+                berkesempatan menjadi kakak pembina untuk adik adik yang baru masuk sma untuk
+                mendapatkan tali kuning atau naik pangkat.lalu saya di kuliah juga mengikuti
+                organisasi yaitu Himpunan Mahasiswa Teknologi Informasi (HMTI) sebagai anggota
+                di divisi research and training. yaitu mencari dan mempresentasikan materi tentang
+                dunia IT
+            </p>
+        </div>
+    </div>
+</section>
+
+<hr>
+
+<!-- MESSAGE US -->
+<section id="message" class="message-us">
+    <h3>Message Us</h3>
+
+    <div class="message-container">
+
+        <!-- FORM -->
+        <form id="contactForm">
+            <label>Nama</label>
+            <input type="text" id="nama" placeholder="Masukkan nama">
+
+            <label>saran</label>
+            <input type="text" id="saran" placeholder="Masukkan saran">
+
+            <label>Pesan</label>
+            <textarea id="pesan" placeholder="Tulis pesan anda..."></textarea>
+
+            <button type="button" onclick="kirim()">Submit</button>
+        </form>
+
+        <!-- RESULT -->
+        <div class="result" id="hasil">
+            <p><b>Current Time:</b></p>
+            <p>Nama :</p>
+            <p>saran:</p>
+            <p>Pesan :</p>
+        </div>
+
+    </div>
+</section>
+
+<footer>
+    Created By Rafid
+</footer>
+
+<script src="js/script.js"></script>
 </body>
-
 </html>

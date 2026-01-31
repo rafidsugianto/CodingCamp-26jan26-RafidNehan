@@ -1,15 +1,137 @@
-
-.logo {
-    height: 60px;
-    width: 60px;
-    background-color: darkgrey;
-    border-radius: 50px;
-    background-image: url(https://wallpapercave.com/wp/wp11987468.jpg);
-    background-size: contain;
+* {
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
 }
 
-.main-header {
+body {
+    margin: 0;
+    background: #f4f6f8;
+}
+
+/* HEADER */
+.header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 15px 40px;
+}
+
+.logo {
+    font-size: 24px;
+}
+
+nav a {
+    border: 1px solid black;
+    padding: 8px 12px;
+    margin-left: 10px;
+    text-decoration: none;
+    color: black;
+}
+
+nav a:hover {
+    background: #e5e7eb;
+}
+
+/* HOME */
+.home {
+    padding: 40px;
+}
+
+/* HEADQUARTER */
+.headquarter {
+    padding: 40px;
+}
+
+.hq-list {
+    display: flex;
+    gap: 60px;
+    margin-top: 20px;
+}
+
+.hq-item {
+    text-align: center;
+}
+
+.circle {
+    width: 90px;
+    height: 90px;
+    border: 2px solid black;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+/* PORTFOLIO */
+.portfolio {
+    padding: 40px;
+}
+
+.portfolio-desc {
+    max-width: 650px;
+    margin-bottom: 25px;
+    color: #555;
+}
+
+.portfolio-list {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.portfolio-card {
+    width: 260px;
+    border: 1px solid #ccc;
+    padding: 20px;
+    background: #ffffff;
+}
+
+/* MESSAGE US */
+.message-us {
+    padding: 40px;
+}
+
+.message-container {
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+form {
+    width: 100%;
+    max-width: 400px;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+}
+
+.radio {
+    margin-top: 5px;
+}
+
+button {
+    margin-top: 15px;
+    padding: 10px;
+    width: 100%;
+    cursor: pointer;
+}
+
+.result {
+    width: 100%;
+    max-width: 400px;
+    border: 1px solid black;
+    padding: 15px;
+}
+
+/* FOOTER */
+footer {
+    text-align: right;
+    padding: 10px 20px;
+    font-size: 12px;
 }

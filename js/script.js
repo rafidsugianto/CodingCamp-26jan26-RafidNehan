@@ -1,16 +1,20 @@
-// JavaScript Display Welcome Message
-welcomeMessage();
+function kirim() {
+    const nama = document.getElementById("nama").value;
+    const saran = document.getElementById("saran").value;
+    const pesan = document.getElementById("pesan").value;
 
-function welcomeMessage() {
-    const userResponse = prompt("Welcome to my Rafid website!What is your name");
+    if (!nama || !saran || !pesan) {
+        alert("Semua data wajib diisi!");
+        return;
+    }
 
-    // Handle null or empty input
-    if (userResponse === null || userResponse.trim() === "") {
-        userResponse = "Guest";
-    } 
+    document.getElementById("hasil").innerHTML = `
+        <p><b>Current Time:</b> ${new Date().toLocaleString()}</p>
+        <p>Nama : ${nama}</p>
+        <p>saran: ${saran}</p>
+        <p>Jenis Kelamin : ${jk.value}</p>
+        <p>Pesan : ${pesan}</p>
+    `;
 
-    // Display the welcome message
-    document.getElementById("welcome-speech").innerText = `Hello, ${userResponse || "Guest"}! Welcome to my Rafid website.`;
+    document.getElementById("contactForm").reset();
 }
-
-function submitmessage() {}
